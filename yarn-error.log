@@ -1,0 +1,51 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.7.0/libexec/bin/yarn.js add redux react-redux
+
+PATH: 
+  ““/Users/Peter/.cargo/bin:/anaconda/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/apple/phalcon-tools:/usr/local/go/bin:/Applications/Postgres.app/Contents/Versions/latest/bin:/Users/Peter/Library/Android/sdk/tools:/Users/Peter/Library/Android/sdk/platform-tools:/usr/local/Cellar/elixir/1.5.1/bin”:/usr/local/bin/elixir”
+
+Yarn version: 
+  1.7.0
+
+Node version: 
+  8.11.2
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: http://registry.npmjs.org/lottie-react-native/-/lottie-react-native-2.5.0.tgz: ESOCKETTIMEDOUT
+      at ClientRequest.<anonymous> (/usr/local/Cellar/yarn/1.7.0/libexec/lib/cli.js:135306:19)
+      at Object.onceWrapper (events.js:313:30)
+      at emitNone (events.js:106:13)
+      at ClientRequest.emit (events.js:208:7)
+      at Socket.emitTimeout (_http_client.js:706:34)
+      at Object.onceWrapper (events.js:313:30)
+      at emitNone (events.js:106:13)
+      at Socket.emit (events.js:208:7)
+      at Socket._onTimeout (net.js:410:8)
+      at ontimeout (timers.js:498:11)
+
+npm manifest: 
+  {
+    "name": "empty-project-template",
+    "main": "node_modules/expo/AppEntry.js",
+    "private": true,
+    "scripts": {
+      "start": "expo start",
+      "android": "expo start --android",
+      "ios": "expo start --ios",
+      "eject": "expo eject"
+    },
+    "dependencies": {
+      "expo": "^30.0.1",
+      "react": "16.3.1",
+      "react-native": "https://github.com/expo/react-native/archive/sdk-30.0.0.tar.gz"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
