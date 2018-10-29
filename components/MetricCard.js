@@ -8,7 +8,7 @@ export default function MetricCard({ date, metrics }) {
   return (
     <View>
       {date && <DateHeader date={date} />}
-      {Object.keys(metrics).map(metic => {
+      {Object.keys(metrics).map(metric => {
         const {
           getIcon,
           displayName,
@@ -18,12 +18,12 @@ export default function MetricCard({ date, metrics }) {
 
         return (
           <View style={styles.metric} key={metric}>
-            {getIcon()}
+            {getIcon}
             <View>
               <Text style={{ fontSize: 20 }}>{displayName}</Text>
-              <Tex style={{ fontSize: 16, color: gray }}>
+              <Text style={{ fontSize: 16, color: gray }}>
                 {metrics[metric]} {unit}
-              </Tex>
+              </Text>
             </View>
           </View>
         );
