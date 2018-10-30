@@ -9,7 +9,9 @@ import {
 import {
   getMetricMetaInfo,
   timeToString,
-  getDailyReminderValue
+  getDailyReminderValue,
+  clearLocalNotification,
+  setLocalNotification
 } from "../utils/helpers";
 import FitSteppers from "../components/FitSteppers";
 import FitSlider from "../components/FitSlider";
@@ -98,6 +100,7 @@ class AddEntry extends Component {
     submitEntry({ key, entry });
 
     // clear local notification
+    clearLocalNotification().then(setLocalNotification);
   };
 
   reset = () => {
